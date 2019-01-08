@@ -1,0 +1,17 @@
+--cpu Cortex-M4.fp
+".\objects\stm32f4xx_rcc.o"
+".\objects\stm32f4xx_gpio.o"
+".\objects\stm32f4xx_syscfg.o"
+".\objects\stm32f4xx_usart.o"
+".\objects\misc.o"
+".\objects\system_stm32f4xx.o"
+".\objects\startup_stm32f401xx.o"
+".\objects\config.o"
+".\objects\delay.o"
+".\objects\usart.o"
+".\objects\hal_led.o"
+".\objects\main.o"
+--strict --scatter ".\Objects\FirstLED.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\FirstLED.map" -o .\Objects\FirstLED.axf
